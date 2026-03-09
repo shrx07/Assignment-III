@@ -1,0 +1,30 @@
+let students = [
+{ name: 'Alice', age:15, scores:[78,88,97] },
+{ name: 'Bob', age:14, scores:[80,91,76] },
+{ name: 'Charlie', age:17, scores:[44,78,82] }
+];
+
+let topStudent = "";
+let highestAverage = 0;
+
+for (let i = 0; i < students.length; i++) {
+
+    let scores = students[i].scores;
+
+    let sum = 0;
+
+    for (let j = 0; j < scores.length; j++) {
+        sum += scores[j];
+    }
+
+    let average = sum / scores.length;
+
+    console.log(students[i].name + " Average:", average);
+
+    if (average > highestAverage) {
+        highestAverage = average;
+        topStudent = students[i].name;
+    }
+}
+
+console.log("Top Student:", topStudent, "with average score of", highestAverage);

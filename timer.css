@@ -1,0 +1,37 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    background-color: #f2f6fa;
+    margin-top: 100px;
+}
+
+.timer-box{
+    font-size: 50px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+button{
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #1d4ed8;
+}
+
+#message{
+    margin-top: 20px;
+    font-weight: bold;
+}
